@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="OnlineLaptopShopFix.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="MasterPage.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+</head>
+<body>
+        <form runat="server">
+        <div id="header">
+            <div id="mainMenu" style="display:flex;height:40px;margin-top:10px; width: 1293px; margin-left: 186px;">
+                <div>
+                    <span style="color:white;font-size:24px">
+                        ASP SHOP
+                    </span>
+                    <br />
+                    <span style="color:white;font-size:12px">
+                        Chuyên dùng công nghệ
+                    </span>
+                </div>
+                <div style="margin-left:60px">
+                    <asp:TextBox ID="TextBox1"  style="margin-top:14px" runat="server" Width="342px"></asp:TextBox>
+                    <asp:LinkButton ID="LinkButton1" runat="server"><i class="fas fa-search" style="color:white;background-color:blue;height:20px;width:20px"></i></asp:LinkButton>
+                </div>
+                <div style="margin-left:60px">
+                    <i class="fas fa-phone" style="margin-top:16px;color:white;border:1px solid white;border-radius:50%;width:20px;height:20px"></i>
+                    <span style="color:white">Hotline:</span>
+                    <span style="color:white">123456789</span>
+                </div>
+                <div style="margin-left:100px">
+                    <asp:Button ID="Button1" style="border-radius: 15%; margin-top: 15px;background-color: blue; color: white;" runat="server" Text="Đăng nhập" />
+                </div>
+                <div style="margin-left: 70px;">
+                    <asp:LinkButton ID="LinkButton2" style="border: 1px solid black;text-decoration: none;background-color: blue;color: white;margin-top: 14px;" runat="server"><i class="fas fa-shopping-cart" style="margin-top: 17px;
+    color: white;"></i>Giỏ hàng</asp:LinkButton>
+                </div>
+            </div>
+        </div>
+        <div id="secondHeader" style="height: 50px;display: flex;">
+            <div style="background-color:cadetblue;width:300px">
+                <p style="color:white;text-align:center">Danh mục sản phẩm</p>
+            </div>
+            <div style="margin-left:70px">
+                <p><a href="" style="color:black"><i class="fas fa-gift" style="color:blue"></i>Sản phẩm khuyến mãi</a></p>
+            </div>
+            <div style="margin-left:70px">
+                <p><a href="" style="color:black"><i class="fas fa-exchange-alt" style="color:blue"></i>Đổi trả trong 7 ngày</a></p>
+            </div>
+            <div style="margin-left:70px">
+                <p><a href="" style="color:black"><i class="fas fa-truck-moving" style="color:blue"></i>Freeship toàn quốc</a></p>
+            </div>
+            <div style="margin-left:70px">
+                <p><a href="" style="color:black"><i class="fas fa-money-bill-wave" style="color:blue"></i>Thanh toán trên toàn quốc</a></p>
+            </div>
+        </div> 
+             <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            <div id="footer" style="background-color:#826A6A;height:250px;border-top:1px solid #848484">
+                <div style="display:flex;height:150px;margin-top:20px">
+                    <div style="margin-left:250px">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            03 Quang Trung Đà Nẵng
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            asp.net@gmail.com
+                        </p>
+                        <p>
+                            Mã số doanh nghiệp:023456789
+                        </p>
+                        <p>
+                            Góp ý ,khiếu nại dịch vụ:0123 1145
+                        </p>
+                    </div>
+                    <div style="margin-left:450px">
+                        <span>
+                            Tổng đài gọi hỗ trợ
+                        </span>
+                        <br />
+                        <span>
+                            Bán hàng:12345521
+                        </span>
+                        <br />
+                        <span>
+                            Bán hàng:12345678
+                        </span>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span>Công ty cổ phần ASP.NET SHOP</span>
+                </div>
+            </div>
+      </form>
+       
+</body>
+</html>
