@@ -8,6 +8,10 @@
     <link href="MasterPage.css" rel="stylesheet"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            
+      </asp:ContentPlaceHolder>
+       
 </head>
 <body>
         <form runat="server">
@@ -32,10 +36,10 @@
                     <span style="color:white">123456789</span>
                 </div>
                 <div style="margin-left:100px">
-                    <asp:Button ID="Button1" style="border-radius: 15%; margin-top: 15px;background-color: blue; color: white;" runat="server" Text="Đăng nhập" />
+                    <asp:Button ID="Button1" style="border-radius: 15%; margin-top: 15px;background-color: blue; color: white;" runat="server" Text="Đăng nhập" OnClick="Button1_Click"  />
                 </div>
                 <div style="margin-left: 70px;">
-                    <asp:LinkButton ID="LinkButton2" style="border: 1px solid black;text-decoration: none;background-color: blue;color: white;margin-top: 14px;" runat="server"><i class="fas fa-shopping-cart" style="margin-top: 17px;
+                    <asp:LinkButton ID="LinkButton2" style="border: 1px solid black;text-decoration: none;background-color: blue;color: white;margin-top: 14px;" runat="server" OnClick="Button2_Click"><i class="fas fa-shopping-cart" style="margin-top: 17px;
     color: white;"></i>Giỏ hàng</asp:LinkButton>
                 </div>
             </div>
@@ -45,22 +49,22 @@
                 <p style="color:white;text-align:center">Danh mục sản phẩm</p>
             </div>
             <div style="margin-left:70px">
-                <p><a href="" style="color:black"><i class="fas fa-gift" style="color:blue"></i>Sản phẩm khuyến mãi</a></p>
+                <p><a href="" style="color:black;text-decoration:none"><i class="fas fa-gift" style="color:blue"></i>Sản phẩm khuyến mãi</a></p>
             </div>
             <div style="margin-left:70px">
-                <p><a href="" style="color:black"><i class="fas fa-exchange-alt" style="color:blue"></i>Đổi trả trong 7 ngày</a></p>
+                <p><a href="" style="color:black;text-decoration:none"><i class="fas fa-exchange-alt" style="color:blue"></i>Đổi trả trong 7 ngày</a></p>
             </div>
             <div style="margin-left:70px">
-                <p><a href="" style="color:black"><i class="fas fa-truck-moving" style="color:blue"></i>Freeship toàn quốc</a></p>
+                <p><a href="" style="color:black;text-decoration:none";><i class="fas fa-truck-moving" style="color:blue"></i>Freeship toàn quốc</a></p>
             </div>
             <div style="margin-left:70px">
-                <p><a href="" style="color:black"><i class="fas fa-money-bill-wave" style="color:blue"></i>Thanh toán trên toàn quốc</a></p>
+                <p><a href="" style="color:black;text-decoration:none";><i class="fas fa-money-bill-wave" style="color:blue"></i>Thanh toán trên toàn quốc</a></p>
             </div>
         </div> 
-             <div>
+             
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
+       
             <div id="footer" style="background-color:#826A6A;height:250px;border-top:1px solid #848484">
                 <div style="display:flex;height:150px;margin-top:20px">
                     <div style="margin-left:250px">
